@@ -20,7 +20,18 @@ public class Abrigo {
         return id;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
+    }
+
+    @Override
+    public String toString() {
+        return """
+               "id":%s,"nome":"%s"
+               """.formatted(this.id, this.nome);
     }
 }
